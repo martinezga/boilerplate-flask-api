@@ -1,6 +1,5 @@
-from flask import Blueprint
-
 from api.controllers import home_controller
+from flask import Blueprint
 
 home_bp = Blueprint("home_bp", __name__, url_prefix="/")
 

@@ -12,15 +12,12 @@ python-decouple = "==3.6"
 aiohttp = "==3.8.3"
 pytest = "==7.2.0"
 pytest-cov = "==4.0.0"
-black = "==22.12.0"
-flake8 = "==6.0.0"
+pre-commit = "==2.21.0"
 
 [dev-packages]
 
 [scripts]
 server          = "python -m api.app"
-flake           = "flake8"
-black           = "black ."
 
 [requires]
 python_version = "3.9"

@@ -1,8 +1,7 @@
-from flask import Flask
-
 from api.configurations import settings
 from api.configurations.database import db
 from api.routes import register_all_bp
+from flask import Flask
 
 
 def create_app():

@@ -1,7 +1,7 @@
 from decouple import config
 
 
-class ApiConfig(object):
+class ApiConfig:
     ENV = config("ENV", default="development")
     DB_SERVER = config("DB_SERVER", default="localhost")
     PORT = config("PORT", default=8000, cast=int)

@@ -5,9 +5,7 @@ repos:
       - id: trailing-whitespace
       - id: check-json
       - id: end-of-file-fixer
-      - id: name-tests-test
       - id: requirements-txt-fixer
-      - id: trailing-whitespace
 
   - repo: https://github.com/psf/black
     rev: 22.12.0
@@ -18,6 +16,15 @@ repos:
     rev: 6.0.0
     hooks:
       - id: flake8
+        additional_dependencies:
+          - flake8-bugbear
+          - flake8-comprehensions
+          - flake8-simplify
+          - flake8-print
+          - flake8-builtins
+          - pep8-naming
+          - flake8-absolute-import
+          - flake8-pytest-style
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.11.4

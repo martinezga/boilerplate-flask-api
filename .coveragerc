@@ -1,0 +1,12 @@
+[run]
+branch = True
+source =
+    api
+omit =
+    *__init__*.py
+    */api/configurations/settings.py
+    */api/configurations/wsgi.py
+    */test/**
+
+[report]
+show_missing = True

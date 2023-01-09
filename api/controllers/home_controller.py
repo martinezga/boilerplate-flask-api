@@ -4,7 +4,7 @@ from flask import make_response
 def home():
     message = {
         "description": "Basic Flask API REST",
-        "detail": "Up and running",
+        "detail": "Up and running!",
         "status_code": 200,
     }
 

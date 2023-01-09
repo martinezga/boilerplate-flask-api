@@ -1,4 +1,4 @@
-from .home_bp import home_bp
+from api.routes.home_bp import home_bp
 
 
 def register_all_bp(flask_app):

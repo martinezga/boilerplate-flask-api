@@ -3,4 +3,5 @@ from flask import Blueprint
 
 home_bp = Blueprint("home_bp", __name__, url_prefix="/")
 
-home_bp.route("/", methods=["GET"])(home_controller.home)
+home_bp.route("", methods=["GET"])(home_controller.home)
+home_bp.route("health/", methods=["GET"])(home_controller.home)
